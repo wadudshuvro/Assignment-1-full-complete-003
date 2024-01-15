@@ -1,0 +1,19 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animate-updown {
+      animation: animate-updownAnim 2s infinite alternate-reverse;
+  }
+
+  @keyframes animate-updownAnim {
+      from {
+          transform: translateY(-20px);
+      }
+      to {
+          transform: translateY(20px);
+      }
+  }
+}
